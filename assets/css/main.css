@@ -24,12 +24,12 @@ main {
 }
 
 main #price_bitcoin {
-	font-size: 5.5em;
+	font-size: 9.5em;
 	line-height: 1;
 }
 
 main #percent_bitcoin {
-	font-size: 0.5em;
+	font-size: 2em;
 	position: absolute;
 }
 
@@ -39,4 +39,22 @@ main .green {
 
 main .red {
 	color: #EF4836;
+}
+
+@media screen and (max-width: 500px) {
+	main #price_bitcoin {
+		font-size: 4.8em;
+	}
+	main #percent_bitcoin {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	main #price_bitcoin {
+		font-size: 4em;
+	}
+	main #percent_bitcoin {
+		font-size: .7em;
+	}
 }
