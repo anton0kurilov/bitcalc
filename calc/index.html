@@ -29,12 +29,12 @@
 		</main>
 		<aside>
 			<div class="to_change">
-				<input type="number" min="0" placeholder="Рубли" class="input" onchange="to_bitcoin()" id="input_rub">
+				<input type="number" min="0" placeholder="Рубли" class="input" oninput="to_bitcoin()" id="input_rub">
 				<i class="material-icons to">chevron_right</i>
 				<input type="number" min="0" placeholder="Биткоины" class="input disabled" id="input_to_bitcoin">
 			</div>
 			<div class="to_change">
-				<input type="number" value="" min="0" placeholder="Биткоины" class="input" onchange="to_rub()" id="input_bitcoin">
+				<input type="number" value="" min="0" placeholder="Биткоины" class="input" oninput="to_rub()" id="input_bitcoin">
 				<i class="material-icons to">chevron_right</i>
 				<input type="number" min="0" placeholder="Рубли" class="input disabled" id="input_to_rub">
 			</div>
