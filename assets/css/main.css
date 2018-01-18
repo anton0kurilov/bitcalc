@@ -1,3 +1,5 @@
+/*-- GENERAL TAGS --*/
+
 html {
 	width: 100%;
 	height: 100%;
@@ -18,6 +20,8 @@ body {
 	justify-content: center;
 	align-items: center;
 }
+
+/*-- MAIN TAGS --*/
 
 main {
 	display: block;
@@ -40,6 +44,63 @@ main .green {
 main .red {
 	color: #EF4836;
 }
+
+/* overlay error */
+
+#overlay_error {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: #212121;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	font-weight: 400;
+	z-index: 1;
+	display: none;
+}
+
+#overlay_error .overlay_body {
+	width: 500px;
+	height: 150px;
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	margin-top: -75px;
+	margin-right: -250px;
+	z-index: 3;
+}
+
+#overlay_error .overlay_body h1 {
+	text-align: center;
+	text-transform: uppercase;
+	cursor: default;
+	line-height: 1;
+}
+
+#overlay_error .overlay_body h2 {
+	margin-top: 8px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #e9e9e9;
+}
+
+.main {
+	width: 1500px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/*-- MOBILE OPTIMIZATIONS --*/
 
 @media screen and (max-width: 500px) {
 	main #price_bitcoin {
