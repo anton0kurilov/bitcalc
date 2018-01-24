@@ -156,6 +156,7 @@ aside .input {
 	font-size: 1.4em;
 	background-color: #233140;
 	color: #eee;
+	font-family: 'Product Sans';
 }
 
 aside .disabled {
@@ -266,5 +267,20 @@ footer a {
 	}
 	.footer .author {
 		display: none;
+	}
+	aside .to_change {
+		margin: -15px 0;
+	}
+	aside .input {
+		padding: 5px 10px;
+	}
+	footer {
+		font-size: .9em;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	footer {
+		font-size: .8em;
 	}
 }
