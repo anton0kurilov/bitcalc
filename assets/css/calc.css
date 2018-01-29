@@ -127,12 +127,6 @@ main .prices {
 	justify-content: center;
 }
 
-main .prices .hr {
-	width: 1px;
-	height: 10px;
-	background-color: rgba(255, 255, 255, .9);
-}
-
 main .prices h2 {
 	font-size: 2em;
 	font-weight: 400;
@@ -212,7 +206,7 @@ footer a {
 
 /*-- MOBILE OPTIMIZATIONS --*/
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1200px) {
 	.main,
 	.footer {
 		width: 80%;
@@ -280,5 +274,11 @@ footer a {
 @media screen and (max-width: 320px) {
 	footer {
 		font-size: .8em;
+	}
+}
+
+@media screen and (max-width: 1200px) and (orientation: landscape) {
+	footer {
+		display: none;
 	}
 }
