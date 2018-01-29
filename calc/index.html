@@ -37,28 +37,22 @@
 			<h2>Зайдите, пожалуйста, позже</h2>
 		</div>
 	</div>
-	<section class="main">
-		<main>
-			<a href="/">
-				<h1>Биткоин-конвертер</h1>
-			</a>
-			<h2 class="prices">BTC: <span id="price_bitcoin"></span><span id="percent_bitcoin"></span></h2>
-			<h2 class="prices">USD: <span id="price_rub"></span><span id="percent_rub"></span></h2>
-		</main>
-		<aside>
-			<div class="to_change">
-				<input type="number" min="0" placeholder="Рубли" class="input" oninput="to_bitcoin()" id="input_rub">
-				<i class="material-icons to">chevron_right</i>
-				<input type="number" min="0" placeholder="Биткоины" class="input disabled" id="input_to_bitcoin" disabled>
-			</div>
-			<div class="to_change">
-				<input type="number" value="" min="0" placeholder="Биткоины" class="input" oninput="to_rub()" id="input_bitcoin">
-				<i class="material-icons to">chevron_right</i>
-				<input type="number" min="0" placeholder="Рубли" class="input disabled" id="input_to_rub" disabled>
-			</div>
-			<div id="test"></div>
-		</aside>
-	</section>
+	<main>
+		<div class="to_change">
+			<input type="number" min="0" placeholder="Рубли" class="input" oninput="to_bitcoin()" id="input_rub">
+			<i class="material-icons to">chevron_right</i>
+			<input type="number" min="0" placeholder="Биткоины" class="input disabled" id="input_to_bitcoin" disabled>
+		</div>
+		<div class="to_change">
+			<input type="number" value="" min="0" placeholder="Биткоины" class="input" oninput="to_rub()" id="input_bitcoin">
+			<i class="material-icons to">chevron_right</i>
+			<input type="number" min="0" placeholder="Рубли" class="input disabled" id="input_to_rub" disabled>
+		</div>
+		<div class="prices">
+			<h2>BTC: <span id="price_bitcoin"></span><span id="percent_bitcoin"></span></h2>
+			<h2>USD: <span id="price_rub"></span><span id="percent_rub"></span></h2>
+		</div>
+	</main>
 	<footer>
 		<section class="footer">
 			<div class="copyrights">Используются данные <a href="https://coinmarketcap.com/" target="_blank" rel="noopener noreferrer">Coinmarketcap</a> и <a href="https://www.cbr-xml-daily.ru/" target="_blank" rel="noopener noreferrer">ЦБ РФ</a>.</div>

@@ -119,22 +119,32 @@ input[type=number]::-webkit-outer-spin-button {
 /* prices block */
 
 main h1 {
-	font-size: 5.5em;
-	line-height: 1;
-	margin-bottom: 5px;
+	width: 1000px;
 }
 
 main .prices {
-	font-size: 3.7em;
-	font-weight: 400;
-	color: rgba(255, 255, 255, .5);
-	line-height: 1.2;
-	cursor: default;
+	display: flex;
+	justify-content: center;
 }
 
-main .prices #percent_bitcoin,
-main .prices #percent_rub {
-	font-size: 0.25em;
+main .prices .hr {
+	width: 1px;
+	height: 10px;
+	background-color: rgba(255, 255, 255, .9);
+}
+
+main .prices h2 {
+	font-size: 2em;
+	font-weight: 400;
+	color: rgba(255, 255, 255, .4);
+	line-height: 1.5;
+	cursor: default;
+	margin: 0 20px;
+}
+
+main .prices h2 #percent_bitcoin,
+main .prices h2 #percent_rub {
+	font-size: 0.3em;
 	position: absolute;
 }
 
@@ -148,7 +158,7 @@ main .prices .red {
 
 /* converter block */
 
-aside .input {
+main .input {
 	border: 0;
 	border-radius: 3px;
 	outline: none;
@@ -159,24 +169,17 @@ aside .input {
 	font-family: 'Product Sans';
 }
 
-aside .disabled {
+main .disabled {
 	cursor: default;
 	opacity: 0.75;
 }
 
-aside .to_change {
+main .to_change {
 	width: auto;
 	height: 46px;
 	margin: 5px 0px;
 	display: flex;
 	align-items: center;
-}
-
-aside .to {
-	cursor: default;
-	font-size: 1.6em;
-	color: #ddd;
-	padding: 0px 4px;
 }
 
 /*-- FOOTER TAGS --*/
@@ -234,21 +237,18 @@ footer a {
 }
 
 @media screen and (max-width: 800px) {
-	.main,
+	main,
 	.footer {
 		width: 90%;
 	}
-	main h1 {
-		font-size: 4em;
+	main .prices h2 {
+		font-size: 1.5em;
 	}
-	main .prices {
-		font-size: 3.2em;
-	}
-	main .prices #percent_bitcoin,
-	main .prices #percent_rub {
+	main #percent_bitcoin,
+	main #percent_rub {
 		font-size: 0.4em;
 	}
-	aside .input {
+	main .input {
 		width: 50%;
 		font-size: .9em;
 		padding: 10px 8px;
@@ -256,23 +256,21 @@ footer a {
 }
 
 @media screen and (max-width: 500px) {
-	main h1 {
-		font-size: 2em;
-	}
 	main .prices {
-		font-size: 2em;
+		flex-direction: column;
+		margin: 10px 0;
+	}
+	main .to_change {
+		margin: -15px 0;
+	}
+	main .to_change .input {
+		padding: 5px 10px;
 	}
 	.footer {
 		margin: 15px auto;
 	}
 	.footer .author {
 		display: none;
-	}
-	aside .to_change {
-		margin: -15px 0;
-	}
-	aside .input {
-		padding: 5px 10px;
 	}
 	footer {
 		font-size: .9em;
