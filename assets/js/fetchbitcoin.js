@@ -27,7 +27,7 @@ fetch('https://api.coinmarketcap.com/v1/ticker/bitcoin/')
 		var price_bitcoin = Math.round(data[0].price_usd),
 			push_price_bitcoin = document.getElementById('price_bitcoin'),
 			// Парсинг изменения цены в процентах из источника
-			percent_bitcoin = data[0].percent_change_1h,
+			percent_bitcoin = data[0].percent_change_24h,
 			push_percent_bitcoin = document.getElementById('percent_bitcoin');
 		// Вывод цены биткоина в div-блок
 		push_price_bitcoin.textContent = '$' + price_bitcoin;
