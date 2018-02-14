@@ -100,11 +100,15 @@ main .red {
 	align-items: center;
 }
 
-.link {
-	position: absolute;
+.link,
+.cmc {
+	position: fixed;
 	color: white;
 	text-decoration: none;
 	bottom: 10px;
+}
+
+.link {
 	right: 10px;
 	background-color: #233140;
 	padding: 5px 10px;
@@ -117,7 +121,12 @@ main .red {
 	transition: .5s;
 }
 
-/*-- MOBILE OPTIMIZATIONS --*/
+.cmc {
+	left: 10px;
+	border-bottom: 1px dotted white;
+}
+
+/*-- MOBILE OPTIMIZATIONS TAGS --*/
 
 @media screen and (max-width: 500px) {
 	main #price_bitcoin {
