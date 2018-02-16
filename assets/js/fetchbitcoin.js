@@ -47,5 +47,5 @@ fetch('https://api.coinmarketcap.com/v1/ticker/bitcoin/')
 		// Вывод в консоль типа ошибки
 		console.log('error is', error);
 		// Активация оверлея с ошибкой
-		document.getElementById('overlay_error').style.display = "block";
+		document.getElementById('overlay_error').style.display = "flex";
 	});

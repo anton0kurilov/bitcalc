@@ -45,5 +45,5 @@ fetch('https://www.cbr-xml-daily.ru/daily_json.js')
 		// Вывод в консоль типа ошибки
 		console.log('error is', error);
 		// Активация оверлея с ошибкой
-		document.getElementById('overlay_error').style.display = "block";
+		document.getElementById('overlay_error').style.display = "flex";
 	});
