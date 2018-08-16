@@ -7,4 +7,4 @@ This is a simple converter from Bitcoin (BTC) to Rubles (RUB) or vice versa.
 
 ## Copyright and licence
 
-Code released under the [MIT Licence](https://github.com/anton0kurilov/md2-library/blob/master/LICENSE). 
+Code released under the [MIT Licence](https://github.com/anton0kurilov/bitcalc/blob/master/LICENSE). 
